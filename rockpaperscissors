@@ -2,6 +2,7 @@ import random
 
 foreverSwitch = 1
 
+
 while foreverSwitch == 1:
     
     options = ['rock','paper','scissors']
