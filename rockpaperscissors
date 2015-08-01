@@ -1,0 +1,40 @@
+import random
+
+foreverSwitch = 1
+
+while foreverSwitch == 1:
+    
+    options = ['rock','paper','scissors']
+
+    print " ";
+
+    player_choice = int(raw_input("Choose 0 for rock, 1 for paper, and 2 for scissors"))
+
+    print " ";
+    
+    print "You played " + options[player_choice] + "!";
+
+    computer_choice = random.randint(0,2)
+    print "The computer chose " + options[computer_choice] + "!";
+ 
+    print " ";
+    
+    if player_choice > computer_choice:
+        if player_choice == 2 and computer_choice == 0:
+            print "CPU wins!"
+        else:
+            print "Player wins!"
+    elif player_choice == computer_choice:
+        print "It's a tie!"
+    else:
+        print "CPU wins"
+
+
+    print " ";
+    
+    stopSwitch = str(raw_input("Would you like to stop? y or n"))
+
+    if stopSwitch == "y" :
+        break;
+
+print("Thank you for playing!")
